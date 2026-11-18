@@ -1,0 +1,996 @@
+[
+  {
+    "id": "prop-01",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": true,
+    "publishedAt": "2026-11-07",
+    "showPrice": true,
+    "acceptsSwap": true,
+    "financing": true,
+    "creditEligible": true,
+    "coveredM2": 165,
+    "landM2": 1800,
+    "hectares": null,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "garage": 2,
+    "waterSource": "VERTIENTE",
+    "electricity": true,
+    "gas": false,
+    "internet": true,
+    "roadAccess": "RIPIO",
+    "kmToTown": 1.5,
+    "kmToCordoba": 165,
+    "mountainView": true,
+    "nearRiver": true,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Camino a Los Sauces, Nono",
+    "lat": -31.7923,
+    "lng": -64.9824,
+    "images": [
+      {
+        "src": "/images/casa-con-vista-al-champaqui-en-nono-1.svg",
+        "alt": "Casa con vista al Champaquí en Nono, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/casa-con-vista-al-champaqui-en-nono-2.svg",
+        "alt": "Casa con vista al Champaquí en Nono, vista 2"
+      },
+      {
+        "src": "/images/casa-con-vista-al-champaqui-en-nono-3.svg",
+        "alt": "Casa con vista al Champaquí en Nono, vista 3"
+      },
+      {
+        "src": "/images/casa-con-vista-al-champaqui-en-nono-4.svg",
+        "alt": "Casa con vista al Champaquí en Nono, vista 4"
+      },
+      {
+        "src": "/images/casa-con-vista-al-champaqui-en-nono-5.svg",
+        "alt": "Casa con vista al Champaquí en Nono, vista 5"
+      }
+    ],
+    "panoramas": [
+      {
+        "src": "/images/nono-pano-living.svg",
+        "title": "Living",
+        "hotspots": [
+          {
+            "pitch": -5,
+            "yaw": 90,
+            "text": "Ir a la galería",
+            "targetIndex": 1
+          }
+        ]
+      },
+      {
+        "src": "/images/nono-pano-galeria.svg",
+        "title": "Galería",
+        "hotspots": [
+          {
+            "pitch": -5,
+            "yaw": -90,
+            "text": "Volver al living",
+            "targetIndex": 0
+          }
+        ]
+      }
+    ],
+    "droneImages": [
+      {
+        "src": "/images/nono-drone-1.svg",
+        "alt": "Vista aérea del lote en Nono 1"
+      },
+      {
+        "src": "/images/nono-drone-2.svg",
+        "alt": "Vista aérea del lote en Nono 2"
+      }
+    ],
+    "floorPlanImages": [
+      {
+        "src": "/images/nono-plano.svg",
+        "alt": "Plano de planta con medidas de la casa en Nono"
+      }
+    ],
+    "nearby": [
+      {
+        "type": "ESCUELA",
+        "name": "Escuela primaria de Nono",
+        "km": 1.6
+      },
+      {
+        "type": "SALUD",
+        "name": "Dispensario de Nono",
+        "km": 2.1
+      },
+      {
+        "type": "COMERCIO",
+        "name": "Supermercado",
+        "km": 1.8
+      },
+      {
+        "type": "RIO",
+        "name": "Acceso al río",
+        "km": 0.9
+      },
+      {
+        "type": "CENTRO",
+        "name": "Centro de Nono",
+        "km": 2.4
+      }
+    ],
+    "slug": "casa-con-vista-al-champaqui-en-nono",
+    "title": "Casa con vista al Champaquí en Nono",
+    "type": "CASA",
+    "localityId": "loc-nono",
+    "agentId": "agent-mina-clavero",
+    "amountUsd": 285000,
+    "description": "Casa de piedra y madera sobre un lote de 1.800 m² con galería, parrilla y vista abierta al Champaquí. Tres dormitorios, living con estufa a leña y cocina integrada. A pasos del río Los Sauces y a 5 minutos del centro de Nono.",
+    "orientationDeg": 70,
+    "lotPolygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -64.9824,
+            -31.7923
+          ],
+          [
+            -64.9819,
+            -31.7922
+          ],
+          [
+            -64.98195,
+            -31.791900000000002
+          ],
+          [
+            -64.98245,
+            -31.79194
+          ],
+          [
+            -64.9824,
+            -31.7923
+          ]
+        ]
+      ]
+    },
+    "tourEmbedUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "videoId": "aqz-KE-bpKQ",
+    "droneVideoId": "aqz-KE-bpKQ",
+    "accessRoadVideoId": "aqz-KE-bpKQ"
+  },
+  {
+    "id": "prop-02",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": true,
+    "publishedAt": "2026-11-04",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": true,
+    "creditEligible": false,
+    "coveredM2": null,
+    "landM2": 1050,
+    "hectares": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "garage": null,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 3.2,
+    "kmToCordoba": 38,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "PRONUNCIADA",
+    "titleStatus": "ESCRITURA",
+    "address": "Barrio Loma Alta, Villa Carlos Paz",
+    "lat": -31.4121,
+    "lng": -64.5278,
+    "images": [
+      {
+        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-1.svg",
+        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-2.svg",
+        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 2"
+      },
+      {
+        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-3.svg",
+        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 3"
+      },
+      {
+        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-4.svg",
+        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 4"
+      },
+      {
+        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-5.svg",
+        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 5"
+      }
+    ],
+    "panoramas": [
+      {
+        "src": "/images/cp-pano-lote.svg",
+        "title": "Vista desde el lote",
+        "hotspots": []
+      }
+    ],
+    "droneImages": [
+      {
+        "src": "/images/cp-drone-1.svg",
+        "alt": "Vista aérea del lote en Carlos Paz 1"
+      },
+      {
+        "src": "/images/cp-drone-2.svg",
+        "alt": "Vista aérea del lote en Carlos Paz 2"
+      }
+    ],
+    "floorPlanImages": [
+      {
+        "src": "/images/cp-plano.svg",
+        "alt": "Plano de mensura del lote con medidas"
+      }
+    ],
+    "nearby": [
+      {
+        "type": "ESCUELA",
+        "name": "Escuela primaria de Villa Carlos Paz",
+        "km": 1.6
+      },
+      {
+        "type": "SALUD",
+        "name": "Dispensario de Villa Carlos Paz",
+        "km": 2.1
+      },
+      {
+        "type": "COMERCIO",
+        "name": "Supermercado",
+        "km": 1.8
+      },
+      {
+        "type": "RIO",
+        "name": "Acceso al río",
+        "km": 0.9
+      },
+      {
+        "type": "CENTRO",
+        "name": "Centro de Villa Carlos Paz",
+        "km": 2.4
+      }
+    ],
+    "slug": "lote-con-vista-al-lago-en-villa-carlos-paz",
+    "title": "Lote con vista al lago en Villa Carlos Paz",
+    "type": "LOTE",
+    "localityId": "loc-carlos-paz",
+    "agentId": "agent-carlos-paz",
+    "amountUsd": 92000,
+    "description": "Lote de 1.050 m² en loma, con vista despejada al lago San Roque y a las sierras. Todos los servicios, escritura inmediata y calle asfaltada. Ideal para construir una casa de fin de semana o para vivir.",
+    "orientationDeg": 120,
+    "lotPolygon": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -64.5278,
+            -31.4121
+          ],
+          [
+            -64.5267,
+            -31.412
+          ],
+          [
+            -64.52681,
+            -31.411199999999997
+          ],
+          [
+            -64.52791,
+            -31.411289999999997
+          ],
+          [
+            -64.5278,
+            -31.4121
+          ]
+        ]
+      ]
+    },
+    "tourEmbedUrl": "https://my.matterport.com/show/?m=SxQL3iGyoDo",
+    "videoId": "aqz-KE-bpKQ",
+    "droneVideoId": "aqz-KE-bpKQ",
+    "accessRoadVideoId": "aqz-KE-bpKQ"
+  },
+  {
+    "id": "prop-03",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": true,
+    "publishedAt": "2026-11-01",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": true,
+    "creditEligible": false,
+    "coveredM2": 78,
+    "landM2": 900,
+    "hectares": null,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "garage": 1,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": false,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 2.8,
+    "kmToCordoba": 160,
+    "mountainView": true,
+    "nearRiver": true,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de Mina Clavero",
+    "lat": -31.7103,
+    "lng": -65.012,
+    "images": [
+      {
+        "src": "/images/cabana-entre-arroyos-en-mina-clavero-1.svg",
+        "alt": "Cabaña entre arroyos en Mina Clavero, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/cabana-entre-arroyos-en-mina-clavero-2.svg",
+        "alt": "Cabaña entre arroyos en Mina Clavero, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "cabana-entre-arroyos-en-mina-clavero",
+    "title": "Cabaña entre arroyos en Mina Clavero",
+    "type": "CABANA",
+    "localityId": "loc-mina-clavero",
+    "agentId": "agent-mina-clavero",
+    "amountUsd": 158000,
+    "description": "Cabaña de dos ambientes con deck, quincho y acceso a un arroyo de aguas claras. Apta renta turística."
+  },
+  {
+    "id": "prop-04",
+    "operation": "EMPRENDIMIENTO",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-29",
+    "showPrice": true,
+    "acceptsSwap": true,
+    "financing": false,
+    "creditEligible": false,
+    "coveredM2": 380,
+    "landM2": 3200,
+    "hectares": null,
+    "bedrooms": 10,
+    "bathrooms": 6,
+    "garage": 6,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": false,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 1.2,
+    "kmToCordoba": 158,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de Villa Cura Brochero",
+    "lat": -31.689,
+    "lng": -65.017,
+    "images": [
+      {
+        "src": "/images/complejo-de-cabanas-en-villa-cura-brochero-1.svg",
+        "alt": "Complejo de 5 cabañas en Villa Cura Brochero, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/complejo-de-cabanas-en-villa-cura-brochero-2.svg",
+        "alt": "Complejo de 5 cabañas en Villa Cura Brochero, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "complejo-de-cabanas-en-villa-cura-brochero",
+    "title": "Complejo de 5 cabañas en Villa Cura Brochero",
+    "type": "CABANA",
+    "localityId": "loc-brochero",
+    "agentId": "agent-mina-clavero",
+    "amountUsd": 520000,
+    "description": "Complejo en funcionamiento con cinco cabañas, pileta y recepción. Ocupación alta todo el año."
+  },
+  {
+    "id": "prop-05",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-26",
+    "showPrice": true,
+    "acceptsSwap": true,
+    "financing": false,
+    "creditEligible": false,
+    "coveredM2": null,
+    "landM2": 200000,
+    "hectares": 20,
+    "bedrooms": null,
+    "bathrooms": null,
+    "garage": null,
+    "waterSource": "RIO",
+    "electricity": false,
+    "gas": false,
+    "internet": false,
+    "roadAccess": "TIERRA",
+    "kmToTown": 9,
+    "kmToCordoba": 190,
+    "mountainView": true,
+    "nearRiver": true,
+    "slope": "PRONUNCIADA",
+    "titleStatus": "BOLETO",
+    "address": "Cerca del centro de San Javier",
+    "lat": -32.03,
+    "lng": -65.034,
+    "images": [
+      {
+        "src": "/images/campo-de-20-hectareas-en-san-javier-1.svg",
+        "alt": "Campo de 20 hectáreas en San Javier, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/campo-de-20-hectareas-en-san-javier-2.svg",
+        "alt": "Campo de 20 hectáreas en San Javier, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "campo-de-20-hectareas-en-san-javier",
+    "title": "Campo de 20 hectáreas en San Javier",
+    "type": "CAMPO",
+    "localityId": "loc-san-javier",
+    "agentId": "agent-mina-clavero",
+    "amountUsd": 240000,
+    "description": "Campo serrano con arroyo, monte nativo y vista al Champaquí. Apto para emprendimiento turístico o chacra."
+  },
+  {
+    "id": "prop-06",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-23",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": false,
+    "creditEligible": false,
+    "coveredM2": 90,
+    "landM2": 20000,
+    "hectares": 2,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "garage": null,
+    "waterSource": "VERTIENTE",
+    "electricity": true,
+    "gas": false,
+    "internet": true,
+    "roadAccess": "RIPIO",
+    "kmToTown": 4,
+    "kmToCordoba": 168,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "SUCESION",
+    "address": "Cerca del centro de Nono",
+    "lat": -31.7943,
+    "lng": -64.9824,
+    "images": [
+      {
+        "src": "/images/chacra-con-frutales-en-nono-1.svg",
+        "alt": "Chacra con frutales en Nono, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/chacra-con-frutales-en-nono-2.svg",
+        "alt": "Chacra con frutales en Nono, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "chacra-con-frutales-en-nono",
+    "title": "Chacra con frutales en Nono",
+    "type": "CAMPO",
+    "localityId": "loc-nono",
+    "agentId": "agent-mina-clavero",
+    "amountUsd": 130000,
+    "description": "Chacra de 2 hectáreas con casa antigua, frutales y riego por canal."
+  },
+  {
+    "id": "prop-07",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-20",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": true,
+    "creditEligible": true,
+    "coveredM2": null,
+    "landM2": 800,
+    "hectares": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "garage": null,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 1.8,
+    "kmToCordoba": 150,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de Nono",
+    "lat": -31.790300000000002,
+    "lng": -64.9864,
+    "images": [
+      {
+        "src": "/images/lote-en-barrio-cerrado-de-nono-1.svg",
+        "alt": "Lote en barrio cerrado de Nono, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/lote-en-barrio-cerrado-de-nono-2.svg",
+        "alt": "Lote en barrio cerrado de Nono, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "lote-en-barrio-cerrado-de-nono",
+    "title": "Lote en barrio cerrado de Nono",
+    "type": "LOTE",
+    "localityId": "loc-nono",
+    "agentId": "agent-mina-clavero",
+    "amountUsd": 45000,
+    "description": "Lote de 800 m² en barrio cerrado con seguridad y calles consolidadas."
+  },
+  {
+    "id": "prop-08",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-17",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": false,
+    "creditEligible": true,
+    "coveredM2": 140,
+    "landM2": 420,
+    "hectares": null,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "garage": 1,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 0.5,
+    "kmToCordoba": 60,
+    "mountainView": false,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de Cosquín",
+    "lat": -31.2338,
+    "lng": -64.4656,
+    "images": [
+      {
+        "src": "/images/casa-de-tres-dormitorios-en-cosquin-1.svg",
+        "alt": "Casa de tres dormitorios en Cosquín, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/casa-de-tres-dormitorios-en-cosquin-2.svg",
+        "alt": "Casa de tres dormitorios en Cosquín, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "casa-de-tres-dormitorios-en-cosquin",
+    "title": "Casa de tres dormitorios en Cosquín",
+    "type": "CASA",
+    "localityId": "loc-cosquin",
+    "agentId": "agent-carlos-paz",
+    "amountUsd": 135000,
+    "description": "Casa luminosa a cuatro cuadras de la plaza, con patio, parrilla y cochera."
+  },
+  {
+    "id": "prop-09",
+    "operation": "EMPRENDIMIENTO",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-14",
+    "showPrice": false,
+    "acceptsSwap": true,
+    "financing": false,
+    "creditEligible": false,
+    "coveredM2": 900,
+    "landM2": 2800,
+    "hectares": null,
+    "bedrooms": 14,
+    "bathrooms": 14,
+    "garage": 8,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 0.4,
+    "kmToCordoba": 80,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de La Falda",
+    "lat": -31.075100000000003,
+    "lng": -64.4946,
+    "images": [
+      {
+        "src": "/images/hotel-boutique-en-la-falda-1.svg",
+        "alt": "Hotel boutique en La Falda, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/hotel-boutique-en-la-falda-2.svg",
+        "alt": "Hotel boutique en La Falda, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "hotel-boutique-en-la-falda",
+    "title": "Hotel boutique en La Falda",
+    "type": "HOTEL",
+    "localityId": "loc-la-falda",
+    "agentId": "agent-carlos-paz",
+    "amountUsd": 780000,
+    "description": "Hotel de 14 habitaciones en edificio histórico, con parque y pileta. Funcionando."
+  },
+  {
+    "id": "prop-10",
+    "operation": "VENTA",
+    "status": "RESERVADA",
+    "featured": false,
+    "publishedAt": "2026-10-11",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": false,
+    "creditEligible": true,
+    "coveredM2": 52,
+    "landM2": null,
+    "hectares": null,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "garage": null,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 0.3,
+    "kmToCordoba": 36,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de Villa Carlos Paz",
+    "lat": -31.4241,
+    "lng": -64.5058,
+    "images": [
+      {
+        "src": "/images/departamento-con-balcon-en-villa-carlos-paz-1.svg",
+        "alt": "Departamento con balcón en Villa Carlos Paz, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/departamento-con-balcon-en-villa-carlos-paz-2.svg",
+        "alt": "Departamento con balcón en Villa Carlos Paz, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "departamento-con-balcon-en-villa-carlos-paz",
+    "title": "Departamento con balcón en Villa Carlos Paz",
+    "type": "DEPARTAMENTO",
+    "localityId": "loc-carlos-paz",
+    "agentId": "agent-carlos-paz",
+    "amountUsd": 78000,
+    "description": "Departamento de dos ambientes con balcón al lago, a dos cuadras de la costanera."
+  },
+  {
+    "id": "prop-11",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-08",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": true,
+    "creditEligible": false,
+    "coveredM2": null,
+    "landM2": 1200,
+    "hectares": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "garage": null,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": false,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 1.4,
+    "kmToCordoba": 28,
+    "mountainView": true,
+    "nearRiver": true,
+    "slope": "PLANO",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de Unquillo",
+    "lat": -31.226599999999998,
+    "lng": -64.3287,
+    "images": [
+      {
+        "src": "/images/lote-en-unquillo-con-arroyo-1.svg",
+        "alt": "Lote en Unquillo con arroyo, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/lote-en-unquillo-con-arroyo-2.svg",
+        "alt": "Lote en Unquillo con arroyo, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "lote-en-unquillo-con-arroyo",
+    "title": "Lote en Unquillo con arroyo",
+    "type": "LOTE",
+    "localityId": "loc-unquillo",
+    "agentId": "agent-sierras-chicas",
+    "amountUsd": 38000,
+    "description": "Lote de 1.200 m² con frente a arroyo y bosque nativo."
+  },
+  {
+    "id": "prop-12",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": true,
+    "publishedAt": "2026-10-05",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": false,
+    "creditEligible": true,
+    "coveredM2": 190,
+    "landM2": 1100,
+    "hectares": null,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "garage": 2,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 1.1,
+    "kmToCordoba": 35,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Cerca del centro de Río Ceballos",
+    "lat": -31.157,
+    "lng": -64.325,
+    "images": [
+      {
+        "src": "/images/casa-serrana-en-rio-ceballos-1.svg",
+        "alt": "Casa serrana en Río Ceballos, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/casa-serrana-en-rio-ceballos-2.svg",
+        "alt": "Casa serrana en Río Ceballos, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "casa-serrana-en-rio-ceballos",
+    "title": "Casa serrana en Río Ceballos",
+    "type": "CASA",
+    "localityId": "loc-rio-ceballos",
+    "agentId": "agent-sierras-chicas",
+    "amountUsd": 210000,
+    "description": "Casa de dos plantas con pileta y quincho, rodeada de verde y a 40 minutos de Córdoba."
+  },
+  {
+    "id": "prop-13",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-10-02",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": false,
+    "creditEligible": false,
+    "coveredM2": null,
+    "landM2": 900,
+    "hectares": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "garage": null,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": false,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 2,
+    "kmToCordoba": 33,
+    "mountainView": true,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "POSESION",
+    "address": "Cerca del centro de Salsipuedes",
+    "lat": -31.1736,
+    "lng": -64.3007,
+    "images": [
+      {
+        "src": "/images/lote-en-salsipuedes-barrio-abierto-1.svg",
+        "alt": "Lote en Salsipuedes, barrio abierto, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/lote-en-salsipuedes-barrio-abierto-2.svg",
+        "alt": "Lote en Salsipuedes, barrio abierto, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "lote-en-salsipuedes-barrio-abierto",
+    "title": "Lote en Salsipuedes, barrio abierto",
+    "type": "LOTE",
+    "localityId": "loc-salsipuedes",
+    "agentId": "agent-sierras-chicas",
+    "amountUsd": 29000,
+    "description": "Lote de 900 m² a minutos del centro, con luz y agua de red."
+  },
+  {
+    "id": "prop-14",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-09-29",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": false,
+    "creditEligible": true,
+    "coveredM2": 45,
+    "landM2": null,
+    "hectares": null,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "garage": null,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 0,
+    "kmToCordoba": 0,
+    "mountainView": false,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Nueva Córdoba, Córdoba",
+    "lat": -31.404100000000003,
+    "lng": -64.1968,
+    "images": [
+      {
+        "src": "/images/departamento-en-nueva-cordoba-1.svg",
+        "alt": "Departamento en Nueva Córdoba, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/departamento-en-nueva-cordoba-2.svg",
+        "alt": "Departamento en Nueva Córdoba, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "departamento-en-nueva-cordoba",
+    "title": "Departamento en Nueva Córdoba",
+    "type": "DEPARTAMENTO",
+    "localityId": "loc-cordoba",
+    "agentId": "agent-capital",
+    "amountUsd": 98000,
+    "description": "Departamento de un dormitorio, a pasos de las universidades, con amenities."
+  },
+  {
+    "id": "prop-15",
+    "operation": "VENTA",
+    "status": "DISPONIBLE",
+    "featured": false,
+    "publishedAt": "2026-09-26",
+    "showPrice": true,
+    "acceptsSwap": false,
+    "financing": false,
+    "creditEligible": false,
+    "coveredM2": 85,
+    "landM2": null,
+    "hectares": null,
+    "bedrooms": null,
+    "bathrooms": null,
+    "garage": null,
+    "waterSource": "RED",
+    "electricity": true,
+    "gas": true,
+    "internet": true,
+    "roadAccess": "ASFALTO",
+    "kmToTown": 0,
+    "kmToCordoba": 0,
+    "mountainView": false,
+    "nearRiver": false,
+    "slope": "SUAVE",
+    "titleStatus": "ESCRITURA",
+    "address": "Centro, Córdoba",
+    "lat": -31.4201,
+    "lng": -64.2008,
+    "images": [
+      {
+        "src": "/images/local-comercial-en-el-centro-de-cordoba-1.svg",
+        "alt": "Local comercial en el centro de Córdoba, vista 1",
+        "cover": true
+      },
+      {
+        "src": "/images/local-comercial-en-el-centro-de-cordoba-2.svg",
+        "alt": "Local comercial en el centro de Córdoba, vista 2"
+      }
+    ],
+    "panoramas": [],
+    "droneImages": [],
+    "floorPlanImages": [],
+    "nearby": [],
+    "slug": "local-comercial-en-el-centro-de-cordoba",
+    "title": "Local comercial en el centro de Córdoba",
+    "type": "LOCAL",
+    "localityId": "loc-cordoba",
+    "agentId": "agent-capital",
+    "amountUsd": 160000,
+    "description": "Local de 85 m² con vidriera sobre peatonal, ideal gastronomía o indumentaria."
+  }
+]

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* Design tokens. TODO(client): brand — swap palette/logo here only. */
+:root {
+  --color-bg: #faf8f4; /* warm white */
+  --color-surface: #ffffff;
+  --color-stone: #e7e3da;
+  --color-ink: #1f2a24;
+  --color-muted: #5f6b63;
+  --color-accent: #1f5a46; /* deep green */
+  --color-accent-fg: #ffffff;
+  --radius: 14px;
+}
+
+@theme inline {
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-ink);
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+}

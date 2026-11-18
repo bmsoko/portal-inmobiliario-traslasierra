@@ -1,0 +1,75 @@
+[
+  {
+    "id": "agent-central",
+    "name": "Corredor central",
+    "slug": "corredor-central",
+    "photo": "/images/agente-corredor-central.svg",
+    "licenseNumber": "CPI 0000",
+    "agencyName": "Red Propiedades Sierras Cordobesas",
+    "agencyLogo": "/images/agencia-corredor-central.svg",
+    "zoneIds": [
+      "zona-traslasierra",
+      "zona-punilla",
+      "zona-sierras-chicas",
+      "zona-capital"
+    ],
+    "bio": "Corredor matriculado que coordina la red de aliados y deriva cada consulta al corredor de la zona.",
+    "isActive": true
+  },
+  {
+    "id": "agent-mina-clavero",
+    "name": "Corredor aliado – Mina Clavero",
+    "slug": "corredor-aliado-mina-clavero",
+    "photo": "/images/agente-corredor-aliado-mina-clavero.svg",
+    "licenseNumber": "CPI 0001",
+    "agencyName": "Inmobiliaria Traslasierra (demo)",
+    "agencyLogo": "/images/agencia-corredor-aliado-mina-clavero.svg",
+    "zoneIds": [
+      "zona-traslasierra"
+    ],
+    "bio": "Aliado de la red en Traslasierra. Conoce cada rincón del valle.",
+    "isActive": true
+  },
+  {
+    "id": "agent-carlos-paz",
+    "name": "Corredor aliado – Villa Carlos Paz",
+    "slug": "corredor-aliado-villa-carlos-paz",
+    "photo": "/images/agente-corredor-aliado-villa-carlos-paz.svg",
+    "licenseNumber": "CPI 0002",
+    "agencyName": "Punilla Propiedades (demo)",
+    "agencyLogo": "/images/agencia-corredor-aliado-villa-carlos-paz.svg",
+    "zoneIds": [
+      "zona-punilla"
+    ],
+    "bio": "Aliado de la red en Punilla. Especialista en lotes con vista al lago.",
+    "isActive": true
+  },
+  {
+    "id": "agent-sierras-chicas",
+    "name": "Lucía Ferreyra (ficticia)",
+    "slug": "lucia-ferreyra",
+    "photo": "/images/agente-lucia-ferreyra.svg",
+    "licenseNumber": "CPI 0003",
+    "agencyName": "Sierras Chicas Hogar (demo)",
+    "agencyLogo": "/images/agencia-lucia-ferreyra.svg",
+    "zoneIds": [
+      "zona-sierras-chicas"
+    ],
+    "bio": "Corredora ficticia para la demo, enfocada en Unquillo y Río Ceballos.",
+    "isActive": true
+  },
+  {
+    "id": "agent-capital",
+    "name": "Martín Acosta (ficticio)",
+    "slug": "martin-acosta",
+    "photo": "/images/agente-martin-acosta.svg",
+    "licenseNumber": "CPI 0004",
+    "agencyName": "Capital Urbana (demo)",
+    "agencyLogo": "/images/agencia-martin-acosta.svg",
+    "zoneIds": [
+      "zona-capital"
+    ],
+    "bio": "Corredor ficticio para la demo, enfocado en departamentos y locales de la capital.",
+    "isActive": true
+  }
+]

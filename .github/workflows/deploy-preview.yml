@@ -1,0 +1,43 @@
+# Preview deploy for every PR into develop/main. Skipped until Cloudflare secrets exist.
+name: Deploy preview
+
+on:
+  pull_request:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+  pull-requests: write
+  deployments: write
+
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
+
+  preview:
+    name: Preview (Cloudflare Pages)
+    needs: ci
+    runs-on: ubuntu-latest
+    # Fork PRs have no secrets; skip them.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Check secrets
+        id: gate
+        run: echo "ok=${{ env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != '' }}" >> "$GITHUB_OUTPUT"
+      - uses: actions/download-artifact@v4
+        if: steps.gate.outputs.ok == 'true'
+        with: { name: site-out, path: out }
+      - name: Deploy preview
+        if: steps.gate.outputs.ok == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=${{ vars.CF_PAGES_PROJECT }} --branch=pr-${{ github.event.pull_request.number }}

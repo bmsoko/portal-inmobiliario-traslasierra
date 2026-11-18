@@ -1,0 +1,56 @@
+[
+  {
+    "id": "zona-traslasierra",
+    "name": "Traslasierra",
+    "slug": "traslasierra",
+    "description": "Al oeste de las Altas Cumbres: sol, ríos y valles abiertos frente al Champaquí.",
+    "heroImage": "/images/zona-traslasierra.svg",
+    "isActive": true,
+    "order": 1
+  },
+  {
+    "id": "zona-punilla",
+    "name": "Valle de Punilla",
+    "slug": "valle-de-punilla",
+    "description": "El corazón turístico de Córdoba: lago San Roque, Cosquín y La Falda.",
+    "heroImage": "/images/zona-valle-de-punilla.svg",
+    "isActive": true,
+    "order": 2
+  },
+  {
+    "id": "zona-sierras-chicas",
+    "name": "Sierras Chicas",
+    "slug": "sierras-chicas",
+    "description": "Pueblos serranos a minutos de la capital, entre arroyos y bosque nativo.",
+    "heroImage": "/images/zona-sierras-chicas.svg",
+    "isActive": true,
+    "order": 3
+  },
+  {
+    "id": "zona-capital",
+    "name": "Córdoba Capital",
+    "slug": "cordoba-capital",
+    "description": "Departamentos y locales en la ciudad, a un paso de las sierras.",
+    "heroImage": "/images/zona-cordoba-capital.svg",
+    "isActive": true,
+    "order": 4
+  },
+  {
+    "id": "zona-calamuchita",
+    "name": "Valle de Calamuchita",
+    "slug": "valle-de-calamuchita",
+    "description": "Próximamente.",
+    "heroImage": "/images/zona-valle-de-calamuchita.svg",
+    "isActive": false,
+    "order": 5
+  },
+  {
+    "id": "zona-paravachasca",
+    "name": "Valle de Paravachasca",
+    "slug": "valle-de-paravachasca",
+    "description": "Próximamente.",
+    "heroImage": "/images/zona-valle-de-paravachasca.svg",
+    "isActive": false,
+    "order": 6
+  }
+]

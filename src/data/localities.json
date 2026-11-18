@@ -1,0 +1,110 @@
+[
+  {
+    "id": "loc-mina-clavero",
+    "zoneId": "zona-traslasierra",
+    "name": "Mina Clavero",
+    "slug": "mina-clavero",
+    "lat": -31.7223,
+    "lng": -65,
+    "shortGuide": "Capital turística de Traslasierra: ríos, balnearios y vida de pueblo todo el año."
+  },
+  {
+    "id": "loc-nono",
+    "zoneId": "zona-traslasierra",
+    "name": "Nono",
+    "slug": "nono",
+    "lat": -31.7983,
+    "lng": -64.9744,
+    "shortGuide": "Pueblo tranquilo sobre el río Los Sauces, ideal para vivir o desconectar."
+  },
+  {
+    "id": "loc-brochero",
+    "zoneId": "zona-traslasierra",
+    "name": "Villa Cura Brochero",
+    "slug": "villa-cura-brochero",
+    "lat": -31.705,
+    "lng": -65.017,
+    "shortGuide": "Centro de servicios del valle, con comercios, salud y colegios."
+  },
+  {
+    "id": "loc-san-javier",
+    "zoneId": "zona-traslasierra",
+    "name": "San Javier",
+    "slug": "san-javier",
+    "lat": -32.03,
+    "lng": -65.03,
+    "shortGuide": "Miradores, chacras y atardeceres sobre el Champaquí."
+  },
+  {
+    "id": "loc-carlos-paz",
+    "zoneId": "zona-punilla",
+    "name": "Villa Carlos Paz",
+    "slug": "villa-carlos-paz",
+    "lat": -31.4241,
+    "lng": -64.4978,
+    "shortGuide": "La ciudad más dinámica de las sierras, frente al lago San Roque."
+  },
+  {
+    "id": "loc-cosquin",
+    "zoneId": "zona-punilla",
+    "name": "Cosquín",
+    "slug": "cosquin",
+    "lat": -31.2458,
+    "lng": -64.4656,
+    "shortGuide": "Cuna del folklore, con sierras y río a pocas cuadras del centro."
+  },
+  {
+    "id": "loc-la-falda",
+    "zoneId": "zona-punilla",
+    "name": "La Falda",
+    "slug": "la-falda",
+    "lat": -31.0911,
+    "lng": -64.4906,
+    "shortGuide": "Arquitectura histórica y barrios serranos con vistas abiertas."
+  },
+  {
+    "id": "loc-unquillo",
+    "zoneId": "zona-sierras-chicas",
+    "name": "Unquillo",
+    "slug": "unquillo",
+    "lat": -31.2306,
+    "lng": -64.3167,
+    "shortGuide": "Pueblo de arroyos y artistas, a 30 minutos de la capital."
+  },
+  {
+    "id": "loc-rio-ceballos",
+    "zoneId": "zona-sierras-chicas",
+    "name": "Río Ceballos",
+    "slug": "rio-ceballos",
+    "lat": -31.165,
+    "lng": -64.325,
+    "shortGuide": "Verde, fresco y con excelente conexión a Córdoba."
+  },
+  {
+    "id": "loc-salsipuedes",
+    "zoneId": "zona-sierras-chicas",
+    "name": "Salsipuedes",
+    "slug": "salsipuedes",
+    "lat": -31.1856,
+    "lng": -64.2967,
+    "shortGuide": "Barrios cerrados y lotes amplios entre bosque nativo."
+  },
+  {
+    "id": "loc-cordoba",
+    "zoneId": "zona-capital",
+    "name": "Córdoba",
+    "slug": "cordoba",
+    "lat": -31.4201,
+    "lng": -64.1888,
+    "shortGuide": "La capital: universidades, comercio y servicios."
+  },
+  {
+    "id": "loc-villa-allende",
+    "zoneId": "zona-sierras-chicas",
+    "name": "Villa Allende",
+    "slug": "villa-allende",
+    "lat": -31.293,
+    "lng": -64.295,
+    "shortGuide": "Ciudad residencial al pie de las sierras."
+  }
+]
