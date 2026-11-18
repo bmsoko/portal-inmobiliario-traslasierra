@@ -29,14 +29,14 @@ export default function Home() {
       {/* Hero: full-bleed landscape, sentence search is the one bold element */}
       <section className="relative isolate flex min-h-[88vh] items-end overflow-hidden bg-[var(--color-accent)] pb-14 sm:pb-20">
         <Image
-          src="/images/zona-traslasierra.svg"
+          src={zones[0]?.heroImage ?? ""}
           alt=""
           fill
           priority
           sizes="100vw"
           className="-z-20 object-cover"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#06201d]/90 via-[#06201d]/45 to-transparent" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,rgb(6_32_29/0.92),rgb(6_32_29/0.55)_55%,rgb(6_32_29/0.25)),linear-gradient(to_right,rgb(6_32_29/0.55),transparent_70%)]" />
         <div className="mx-auto w-full max-w-6xl px-4">
           <h1 className="hero-settle max-w-3xl text-5xl text-white sm:text-7xl">
             {es.home.heroTitle}

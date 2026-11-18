@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { es } from "@/content/es";
 
 export function Footer() {
@@ -8,6 +9,14 @@ export function Footer() {
         <p className="mt-1">{es.footer.about}</p>
         <p className="mt-4">
           {es.footer.demo} © 2026 {es.brand.name}. {es.footer.rights}
+        </p>
+        <p className="mt-2 flex gap-4">
+          <Link href="/creditos/" className="underline underline-offset-4">
+            Créditos de fotos
+          </Link>
+          <Link href="/seo/" className="underline underline-offset-4">
+            Cómo te encuentra Google
+          </Link>
         </p>
       </div>
     </footer>
