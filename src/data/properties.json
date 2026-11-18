@@ -31,25 +31,25 @@
     "lng": -64.9824,
     "images": [
       {
-        "src": "/images/casa-con-vista-al-champaqui-en-nono-1.svg",
-        "alt": "Casa con vista al Champaquí en Nono, vista 1",
+        "src": "/images/photos/champaqui.webp",
+        "alt": "Vista al cerro Champaquí desde la zona de Nono",
         "cover": true
       },
       {
-        "src": "/images/casa-con-vista-al-champaqui-en-nono-2.svg",
-        "alt": "Casa con vista al Champaquí en Nono, vista 2"
+        "src": "/images/photos/interior-living.webp",
+        "alt": "Living de madera con sillones y ventana al jardín"
       },
       {
-        "src": "/images/casa-con-vista-al-champaqui-en-nono-3.svg",
-        "alt": "Casa con vista al Champaquí en Nono, vista 3"
+        "src": "/images/photos/interior-cocina.webp",
+        "alt": "Cocina con mesada de madera y ventana"
       },
       {
-        "src": "/images/casa-con-vista-al-champaqui-en-nono-4.svg",
-        "alt": "Casa con vista al Champaquí en Nono, vista 4"
+        "src": "/images/photos/interior-dormitorio.webp",
+        "alt": "Dormitorio revestido en madera"
       },
       {
-        "src": "/images/casa-con-vista-al-champaqui-en-nono-5.svg",
-        "alt": "Casa con vista al Champaquí en Nono, vista 5"
+        "src": "/images/photos/nono-1.webp",
+        "alt": "Río Chico de Nono a pocos minutos de la casa"
       }
     ],
     "panoramas": [
@@ -80,12 +80,12 @@
     ],
     "droneImages": [
       {
-        "src": "/images/nono-drone-1.svg",
-        "alt": "Vista aérea del lote en Nono 1"
+        "src": "/images/photos/zona-traslasierra.webp",
+        "alt": "Vista elevada del valle de Traslasierra"
       },
       {
-        "src": "/images/nono-drone-2.svg",
-        "alt": "Vista aérea del lote en Nono 2"
+        "src": "/images/photos/champaqui.webp",
+        "alt": "Las sierras de Traslasierra desde lo alto"
       }
     ],
     "floorPlanImages": [
@@ -193,25 +193,17 @@
     "lng": -64.5278,
     "images": [
       {
-        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-1.svg",
-        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 1",
+        "src": "/images/photos/carlos-paz-2.webp",
+        "alt": "Vista al lago San Roque desde la loma",
         "cover": true
       },
       {
-        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-2.svg",
-        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 2"
+        "src": "/images/photos/carlos-paz-1.webp",
+        "alt": "Villa Carlos Paz y el lago desde el cerro de la Cruz"
       },
       {
-        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-3.svg",
-        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 3"
-      },
-      {
-        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-4.svg",
-        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 4"
-      },
-      {
-        "src": "/images/lote-con-vista-al-lago-en-villa-carlos-paz-5.svg",
-        "alt": "Lote con vista al lago en Villa Carlos Paz, vista 5"
+        "src": "/images/photos/zona-punilla.webp",
+        "alt": "Río Cosquín, en el Valle de Punilla"
       }
     ],
     "panoramas": [
@@ -223,12 +215,12 @@
     ],
     "droneImages": [
       {
-        "src": "/images/cp-drone-1.svg",
-        "alt": "Vista aérea del lote en Carlos Paz 1"
+        "src": "/images/photos/carlos-paz-1.webp",
+        "alt": "Villa Carlos Paz y el lago desde lo alto"
       },
       {
-        "src": "/images/cp-drone-2.svg",
-        "alt": "Vista aérea del lote en Carlos Paz 2"
+        "src": "/images/photos/carlos-paz-2.webp",
+        "alt": "El lago San Roque visto desde las lomas"
       }
     ],
     "floorPlanImages": [
@@ -336,13 +328,13 @@
     "lng": -65.012,
     "images": [
       {
-        "src": "/images/cabana-entre-arroyos-en-mina-clavero-1.svg",
-        "alt": "Cabaña entre arroyos en Mina Clavero, vista 1",
+        "src": "/images/photos/cabana.webp",
+        "alt": "Cabaña de madera entre árboles",
         "cover": true
       },
       {
-        "src": "/images/cabana-entre-arroyos-en-mina-clavero-2.svg",
-        "alt": "Cabaña entre arroyos en Mina Clavero, vista 2"
+        "src": "/images/photos/mina-clavero-1.webp",
+        "alt": "Pasarela sobre el río Mina Clavero"
       }
     ],
     "panoramas": [],
@@ -389,13 +381,13 @@
     "lng": -65.017,
     "images": [
       {
-        "src": "/images/complejo-de-cabanas-en-villa-cura-brochero-1.svg",
-        "alt": "Complejo de 5 cabañas en Villa Cura Brochero, vista 1",
+        "src": "/images/photos/interior-living.webp",
+        "alt": "Interior de una de las cabañas",
         "cover": true
       },
       {
-        "src": "/images/complejo-de-cabanas-en-villa-cura-brochero-2.svg",
-        "alt": "Complejo de 5 cabañas en Villa Cura Brochero, vista 2"
+        "src": "/images/photos/brochero-1.webp",
+        "alt": "Plaza Centenario de Villa Cura Brochero"
       }
     ],
     "panoramas": [],
@@ -442,13 +434,13 @@
     "lng": -65.034,
     "images": [
       {
-        "src": "/images/campo-de-20-hectareas-en-san-javier-1.svg",
-        "alt": "Campo de 20 hectáreas en San Javier, vista 1",
+        "src": "/images/photos/campo.webp",
+        "alt": "Pastizales y roca en las sierras de Córdoba",
         "cover": true
       },
       {
-        "src": "/images/campo-de-20-hectareas-en-san-javier-2.svg",
-        "alt": "Campo de 20 hectáreas en San Javier, vista 2"
+        "src": "/images/photos/san-javier-1.webp",
+        "alt": "Sierras de Villa Yacanto, cerca de San Javier"
       }
     ],
     "panoramas": [],
@@ -495,13 +487,13 @@
     "lng": -64.9824,
     "images": [
       {
-        "src": "/images/chacra-con-frutales-en-nono-1.svg",
-        "alt": "Chacra con frutales en Nono, vista 1",
+        "src": "/images/photos/nono-1.webp",
+        "alt": "Río Chico de Nono, en el vado Cortaderas",
         "cover": true
       },
       {
-        "src": "/images/chacra-con-frutales-en-nono-2.svg",
-        "alt": "Chacra con frutales en Nono, vista 2"
+        "src": "/images/photos/zona-traslasierra.webp",
+        "alt": "Balneario de Mina Clavero, a minutos de Nono"
       }
     ],
     "panoramas": [],
@@ -548,13 +540,13 @@
     "lng": -64.9864,
     "images": [
       {
-        "src": "/images/lote-en-barrio-cerrado-de-nono-1.svg",
-        "alt": "Lote en barrio cerrado de Nono, vista 1",
+        "src": "/images/photos/camino-ripio.webp",
+        "alt": "Camino de tierra entre la vegetación serrana",
         "cover": true
       },
       {
-        "src": "/images/lote-en-barrio-cerrado-de-nono-2.svg",
-        "alt": "Lote en barrio cerrado de Nono, vista 2"
+        "src": "/images/photos/mina-clavero-2.webp",
+        "alt": "Formaciones de roca sobre el río en Traslasierra"
       }
     ],
     "panoramas": [],
@@ -601,13 +593,13 @@
     "lng": -64.4656,
     "images": [
       {
-        "src": "/images/casa-de-tres-dormitorios-en-cosquin-1.svg",
-        "alt": "Casa de tres dormitorios en Cosquín, vista 1",
+        "src": "/images/photos/cosquin-1.webp",
+        "alt": "Río Cosquín a pocas cuadras de la casa",
         "cover": true
       },
       {
-        "src": "/images/casa-de-tres-dormitorios-en-cosquin-2.svg",
-        "alt": "Casa de tres dormitorios en Cosquín, vista 2"
+        "src": "/images/photos/interior-dormitorio.webp",
+        "alt": "Dormitorio con revestimiento de madera"
       }
     ],
     "panoramas": [],
@@ -654,13 +646,13 @@
     "lng": -64.4946,
     "images": [
       {
-        "src": "/images/hotel-boutique-en-la-falda-1.svg",
-        "alt": "Hotel boutique en La Falda, vista 1",
+        "src": "/images/photos/hotel.webp",
+        "alt": "Fachada del histórico Edén Hotel de La Falda",
         "cover": true
       },
       {
-        "src": "/images/hotel-boutique-en-la-falda-2.svg",
-        "alt": "Hotel boutique en La Falda, vista 2"
+        "src": "/images/photos/la-falda-1.webp",
+        "alt": "La Falda desde la plaza San Martín"
       }
     ],
     "panoramas": [],
@@ -707,13 +699,13 @@
     "lng": -64.5058,
     "images": [
       {
-        "src": "/images/departamento-con-balcon-en-villa-carlos-paz-1.svg",
-        "alt": "Departamento con balcón en Villa Carlos Paz, vista 1",
+        "src": "/images/photos/carlos-paz-1.webp",
+        "alt": "Villa Carlos Paz desde el cerro de la Cruz",
         "cover": true
       },
       {
-        "src": "/images/departamento-con-balcon-en-villa-carlos-paz-2.svg",
-        "alt": "Departamento con balcón en Villa Carlos Paz, vista 2"
+        "src": "/images/photos/interior-cocina.webp",
+        "alt": "Cocina integrada con ventana"
       }
     ],
     "panoramas": [],
@@ -760,13 +752,13 @@
     "lng": -64.3287,
     "images": [
       {
-        "src": "/images/lote-en-unquillo-con-arroyo-1.svg",
-        "alt": "Lote en Unquillo con arroyo, vista 1",
+        "src": "/images/photos/cordoba-2.webp",
+        "alt": "Arroyo entre rocas y monte nativo",
         "cover": true
       },
       {
-        "src": "/images/lote-en-unquillo-con-arroyo-2.svg",
-        "alt": "Lote en Unquillo con arroyo, vista 2"
+        "src": "/images/photos/zona-sierras-chicas.webp",
+        "alt": "Paisaje de las Sierras Chicas"
       }
     ],
     "panoramas": [],
@@ -813,13 +805,13 @@
     "lng": -64.325,
     "images": [
       {
-        "src": "/images/casa-serrana-en-rio-ceballos-1.svg",
-        "alt": "Casa serrana en Río Ceballos, vista 1",
+        "src": "/images/photos/rio-ceballos-1.webp",
+        "alt": "Dique La Quebrada, en Río Ceballos",
         "cover": true
       },
       {
-        "src": "/images/casa-serrana-en-rio-ceballos-2.svg",
-        "alt": "Casa serrana en Río Ceballos, vista 2"
+        "src": "/images/photos/interior-living.webp",
+        "alt": "Living de madera con vista al verde"
       }
     ],
     "panoramas": [],
@@ -866,13 +858,13 @@
     "lng": -64.3007,
     "images": [
       {
-        "src": "/images/lote-en-salsipuedes-barrio-abierto-1.svg",
-        "alt": "Lote en Salsipuedes, barrio abierto, vista 1",
+        "src": "/images/photos/zona-sierras-chicas.webp",
+        "alt": "Camino serrano en las Sierras Chicas",
         "cover": true
       },
       {
-        "src": "/images/lote-en-salsipuedes-barrio-abierto-2.svg",
-        "alt": "Lote en Salsipuedes, barrio abierto, vista 2"
+        "src": "/images/photos/salsipuedes-1.webp",
+        "alt": "Calle del centro de Salsipuedes"
       }
     ],
     "panoramas": [],
@@ -919,13 +911,13 @@
     "lng": -64.1968,
     "images": [
       {
-        "src": "/images/departamento-en-nueva-cordoba-1.svg",
-        "alt": "Departamento en Nueva Córdoba, vista 1",
+        "src": "/images/photos/cordoba-1.webp",
+        "alt": "Edificios en barrio Nueva Córdoba",
         "cover": true
       },
       {
-        "src": "/images/departamento-en-nueva-cordoba-2.svg",
-        "alt": "Departamento en Nueva Córdoba, vista 2"
+        "src": "/images/photos/interior-cocina.webp",
+        "alt": "Cocina con mesada de madera"
       }
     ],
     "panoramas": [],
@@ -972,13 +964,13 @@
     "lng": -64.2008,
     "images": [
       {
-        "src": "/images/local-comercial-en-el-centro-de-cordoba-1.svg",
-        "alt": "Local comercial en el centro de Córdoba, vista 1",
+        "src": "/images/photos/zona-capital.webp",
+        "alt": "La Cañada, en el centro de Córdoba",
         "cover": true
       },
       {
-        "src": "/images/local-comercial-en-el-centro-de-cordoba-2.svg",
-        "alt": "Local comercial en el centro de Córdoba, vista 2"
+        "src": "/images/photos/cordoba-1.webp",
+        "alt": "Edificios de Nueva Córdoba"
       }
     ],
     "panoramas": [],

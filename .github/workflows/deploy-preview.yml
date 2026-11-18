@@ -31,7 +31,7 @@ jobs:
       - name: Check secrets
         id: gate
         run: echo "ok=${{ env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != '' }}" >> "$GITHUB_OUTPUT"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         if: steps.gate.outputs.ok == 'true'
         with: { name: site-out, path: out }
       - name: Deploy preview

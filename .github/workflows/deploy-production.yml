@@ -36,7 +36,7 @@ jobs:
           else
             echo "ok=true" >> "$GITHUB_OUTPUT"
           fi
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         if: steps.gate.outputs.ok == 'true'
         with: { name: site-out, path: out }
       - name: Deploy to Cloudflare Pages

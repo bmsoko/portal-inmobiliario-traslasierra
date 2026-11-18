@@ -4,7 +4,7 @@
     "name": "Traslasierra",
     "slug": "traslasierra",
     "description": "Al oeste de las Altas Cumbres: sol, ríos y valles abiertos frente al Champaquí.",
-    "heroImage": "/images/zona-traslasierra.svg",
+    "heroImage": "/images/photos/san-javier-1.webp",
     "isActive": true,
     "order": 1
   },
@@ -13,7 +13,7 @@
     "name": "Valle de Punilla",
     "slug": "valle-de-punilla",
     "description": "El corazón turístico de Córdoba: lago San Roque, Cosquín y La Falda.",
-    "heroImage": "/images/zona-valle-de-punilla.svg",
+    "heroImage": "/images/photos/carlos-paz-1.webp",
     "isActive": true,
     "order": 2
   },
@@ -22,7 +22,7 @@
     "name": "Sierras Chicas",
     "slug": "sierras-chicas",
     "description": "Pueblos serranos a minutos de la capital, entre arroyos y bosque nativo.",
-    "heroImage": "/images/zona-sierras-chicas.svg",
+    "heroImage": "/images/photos/rio-ceballos-1.webp",
     "isActive": true,
     "order": 3
   },
@@ -31,7 +31,7 @@
     "name": "Córdoba Capital",
     "slug": "cordoba-capital",
     "description": "Departamentos y locales en la ciudad, a un paso de las sierras.",
-    "heroImage": "/images/zona-cordoba-capital.svg",
+    "heroImage": "/images/photos/zona-capital.webp",
     "isActive": true,
     "order": 4
   },
@@ -40,7 +40,7 @@
     "name": "Valle de Calamuchita",
     "slug": "valle-de-calamuchita",
     "description": "Próximamente.",
-    "heroImage": "/images/zona-valle-de-calamuchita.svg",
+    "heroImage": "/images/photos/zona-calamuchita.webp",
     "isActive": false,
     "order": 5
   },
@@ -49,7 +49,7 @@
     "name": "Valle de Paravachasca",
     "slug": "valle-de-paravachasca",
     "description": "Próximamente.",
-    "heroImage": "/images/zona-valle-de-paravachasca.svg",
+    "heroImage": "/images/photos/zona-paravachasca.webp",
     "isActive": false,
     "order": 6
   }

@@ -1,11 +1,11 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
-test("home shell renders with one H1 and noindex", async ({ page }) => {
+test("home renders with one H1 and noindex", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("h1")).toHaveCount(1);
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
-  await expect(page.getByTestId("shell-stats")).toContainText("4 zonas");
+  await expect(page.getByTestId("zone-tile")).toHaveCount(4);
 });
 
 test("home has no axe violations", async ({ page }) => {

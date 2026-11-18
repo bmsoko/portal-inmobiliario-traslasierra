@@ -1,6 +1,6 @@
 /* Generates demo seed JSON + placeholder SVG images. Run: pnpm tsx scripts/generate-seed.ts
    All data is clearly fictional. Replace images with licensed photos later (docs/CREDITS.md). */
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = process.cwd();
@@ -17,16 +17,30 @@ const palettes: Record<string, [string, string, string]> = {
 };
 function svg(label: string, pal: keyof typeof palettes, w = 1600, h = 1000): string {
   const [a, b, c] = palettes[pal];
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><rect width="${w}" height="${h}" fill="url(#g)"/><path d="M0 ${h * 0.62} L${w * 0.22} ${h * 0.38} L${w * 0.4} ${h * 0.55} L${w * 0.64} ${h * 0.3} L${w} ${h * 0.6} V${h} H0Z" fill="${b}"/><path d="M0 ${h * 0.78} Q${w * 0.3} ${h * 0.62} ${w * 0.6} ${h * 0.8} T${w} ${h * 0.74} V${h} H0Z" fill="${c}"/><text x="${w / 2}" y="${h * 0.14}" text-anchor="middle" font-family="sans-serif" font-size="${h * 0.045}" fill="${c}" opacity=".8">${label} · imagen de demostración</text></svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><rect width="${w}" height="${h}" fill="url(#g)"/><path d="M0 ${h * 0.62} L${w * 0.22} ${h * 0.38} L${w * 0.4} ${h * 0.55} L${w * 0.64} ${h * 0.3} L${w} ${h * 0.6} V${h} H0Z" fill="${b}"/><path d="M0 ${h * 0.78} Q${w * 0.3} ${h * 0.62} ${w * 0.6} ${h * 0.8} T${w} ${h * 0.74} V${h} H0Z" fill="${c}"/></svg>`;
 }
 function img(name: string, label: string, pal: keyof typeof palettes, w?: number, h?: number) {
   writeFileSync(join(imgDir, `${name}.svg`), svg(label, pal, w, h));
   return `/images/${name}.svg`;
 }
+// Real CC-licensed photos (scripts/fetch-photos.mts); falls back to SVG placeholders.
+const photoManifestPath = join(dataDir, "photos.json");
+const photos: Record<string, { src: string }> = existsSync(photoManifestPath)
+  ? JSON.parse(readFileSync(photoManifestPath, "utf8"))
+  : {};
+const photo = (slot: string, fallback: () => string) => photos[slot]?.src ?? fallback();
 const write = (f: string, d: unknown) =>
   writeFileSync(join(dataDir, f), JSON.stringify(d, null, 2) + "\n");
 
 // ---------- Zones ----------
+const ZONE_PHOTO: Record<string, string> = {
+  traslasierra: "san-javier-1",
+  "valle-de-punilla": "carlos-paz-1",
+  "sierras-chicas": "rio-ceballos-1",
+  "cordoba-capital": "zona-capital",
+  "valle-de-calamuchita": "zona-calamuchita",
+  "valle-de-paravachasca": "zona-paravachasca",
+};
 const zones = [
   [
     "zona-traslasierra",
@@ -84,7 +98,7 @@ write(
     name,
     slug,
     description,
-    heroImage: img(`zona-${slug}`, name, pal),
+    heroImage: photo(ZONE_PHOTO[slug], () => img(`zona-${slug}`, name, pal)),
     isActive,
     order: i + 1,
   })),
@@ -292,13 +306,21 @@ function prop(
   const l = loc(o.localityId);
   const pal = pals[i % pals.length];
   const rich = !!o.rich;
-  const imgs = Array.from({ length: rich ? 5 : 2 }, (_, k) => ({
-    src: img(`${o.slug}-${k + 1}`, `${o.title}`, pal),
-    alt: `${o.title}, vista ${k + 1}`,
-    ...(k === 0 ? { cover: true } : {}),
-  }));
-  const { rich: _r, ...rest } = o as P;
+  const real = (o.photos as [string, string][] | undefined)?.filter(([slot]) => photos[slot]);
+  const imgs = real?.length
+    ? real.map(([slot, alt], k) => ({
+        src: photos[slot].src,
+        alt,
+        ...(k === 0 ? { cover: true } : {}),
+      }))
+    : Array.from({ length: rich ? 5 : 2 }, (_, k) => ({
+        src: img(`${o.slug}-${k + 1}`, `${o.title}`, pal),
+        alt: `${o.title}, vista ${k + 1}`,
+        ...(k === 0 ? { cover: true } : {}),
+      }));
+  const { rich: _r, photos: _p, ...rest } = o as P;
   void _r;
+  void _p;
   const base: P = {
     id: `prop-${String(i).padStart(2, "0")}`,
     operation: "VENTA",
@@ -368,6 +390,13 @@ const heroCpLat = cp.lat + 0.012,
 
 const heroNono = prop(1, {
   slug: "casa-con-vista-al-champaqui-en-nono",
+  photos: [
+    ["champaqui", "Vista al cerro Champaquí desde la zona de Nono"],
+    ["interior-living", "Living de madera con sillones y ventana al jardín"],
+    ["interior-cocina", "Cocina con mesada de madera y ventana"],
+    ["interior-dormitorio", "Dormitorio revestido en madera"],
+    ["nono-1", "Río Chico de Nono a pocos minutos de la casa"],
+  ],
   title: "Casa con vista al Champaquí en Nono",
   type: "CASA",
   localityId: "loc-nono",
@@ -412,10 +441,16 @@ const heroNono = prop(1, {
   videoId: "aqz-KE-bpKQ",
   droneVideoId: "aqz-KE-bpKQ",
   accessRoadVideoId: "aqz-KE-bpKQ",
-  droneImages: [1, 2].map((k) => ({
-    src: img(`nono-drone-${k}`, "Vista aérea", "blue"),
-    alt: `Vista aérea del lote en Nono ${k}`,
-  })),
+  droneImages: [
+    {
+      src: photo("zona-traslasierra", () => img("nono-drone-1", "Vista aérea", "blue")),
+      alt: "Vista elevada del valle de Traslasierra",
+    },
+    {
+      src: photo("champaqui", () => img("nono-drone-2", "Vista aérea", "blue")),
+      alt: "Las sierras de Traslasierra desde lo alto",
+    },
+  ],
   floorPlanImages: [
     {
       src: img("nono-plano", "Plano", "stone", 1600, 1000),
@@ -427,6 +462,11 @@ const heroNono = prop(1, {
 });
 const heroCp = prop(2, {
   slug: "lote-con-vista-al-lago-en-villa-carlos-paz",
+  photos: [
+    ["carlos-paz-2", "Vista al lago San Roque desde la loma"],
+    ["carlos-paz-1", "Villa Carlos Paz y el lago desde el cerro de la Cruz"],
+    ["zona-punilla", "Río Cosquín, en el Valle de Punilla"],
+  ],
   title: "Lote con vista al lago en Villa Carlos Paz",
   type: "LOTE",
   localityId: "loc-carlos-paz",
@@ -461,10 +501,16 @@ const heroCp = prop(2, {
   videoId: "aqz-KE-bpKQ",
   droneVideoId: "aqz-KE-bpKQ",
   accessRoadVideoId: "aqz-KE-bpKQ",
-  droneImages: [1, 2].map((k) => ({
-    src: img(`cp-drone-${k}`, "Vista aérea", "green"),
-    alt: `Vista aérea del lote en Carlos Paz ${k}`,
-  })),
+  droneImages: [
+    {
+      src: photo("carlos-paz-1", () => img("cp-drone-1", "Vista aérea", "green")),
+      alt: "Villa Carlos Paz y el lago desde lo alto",
+    },
+    {
+      src: photo("carlos-paz-2", () => img("cp-drone-2", "Vista aérea", "green")),
+      alt: "El lago San Roque visto desde las lomas",
+    },
+  ],
   floorPlanImages: [
     {
       src: img("cp-plano", "Plano de mensura", "stone", 1600, 1000),
@@ -477,6 +523,10 @@ const heroCp = prop(2, {
 const others: P[] = [
   {
     slug: "cabana-entre-arroyos-en-mina-clavero",
+    photos: [
+      ["cabana", "Cabaña de madera entre árboles"],
+      ["mina-clavero-1", "Pasarela sobre el río Mina Clavero"],
+    ],
     title: "Cabaña entre arroyos en Mina Clavero",
     type: "CABANA",
     localityId: "loc-mina-clavero",
@@ -497,6 +547,10 @@ const others: P[] = [
   },
   {
     slug: "complejo-de-cabanas-en-villa-cura-brochero",
+    photos: [
+      ["interior-living", "Interior de una de las cabañas"],
+      ["brochero-1", "Plaza Centenario de Villa Cura Brochero"],
+    ],
     title: "Complejo de 5 cabañas en Villa Cura Brochero",
     type: "CABANA",
     operation: "EMPRENDIMIENTO",
@@ -516,6 +570,10 @@ const others: P[] = [
   },
   {
     slug: "campo-de-20-hectareas-en-san-javier",
+    photos: [
+      ["campo", "Pastizales y roca en las sierras de Córdoba"],
+      ["san-javier-1", "Sierras de Villa Yacanto, cerca de San Javier"],
+    ],
     title: "Campo de 20 hectáreas en San Javier",
     type: "CAMPO",
     localityId: "loc-san-javier",
@@ -538,6 +596,10 @@ const others: P[] = [
   },
   {
     slug: "chacra-con-frutales-en-nono",
+    photos: [
+      ["nono-1", "Río Chico de Nono, en el vado Cortaderas"],
+      ["zona-traslasierra", "Balneario de Mina Clavero, a minutos de Nono"],
+    ],
     title: "Chacra con frutales en Nono",
     type: "CAMPO",
     localityId: "loc-nono",
@@ -557,6 +619,10 @@ const others: P[] = [
   },
   {
     slug: "lote-en-barrio-cerrado-de-nono",
+    photos: [
+      ["camino-ripio", "Camino de tierra entre la vegetación serrana"],
+      ["mina-clavero-2", "Formaciones de roca sobre el río en Traslasierra"],
+    ],
     title: "Lote en barrio cerrado de Nono",
     type: "LOTE",
     localityId: "loc-nono",
@@ -571,6 +637,10 @@ const others: P[] = [
   },
   {
     slug: "casa-de-tres-dormitorios-en-cosquin",
+    photos: [
+      ["cosquin-1", "Río Cosquín a pocas cuadras de la casa"],
+      ["interior-dormitorio", "Dormitorio con revestimiento de madera"],
+    ],
     title: "Casa de tres dormitorios en Cosquín",
     type: "CASA",
     localityId: "loc-cosquin",
@@ -590,6 +660,10 @@ const others: P[] = [
   },
   {
     slug: "hotel-boutique-en-la-falda",
+    photos: [
+      ["hotel", "Fachada del histórico Edén Hotel de La Falda"],
+      ["la-falda-1", "La Falda desde la plaza San Martín"],
+    ],
     title: "Hotel boutique en La Falda",
     type: "HOTEL",
     operation: "EMPRENDIMIENTO",
@@ -611,6 +685,10 @@ const others: P[] = [
   },
   {
     slug: "departamento-con-balcon-en-villa-carlos-paz",
+    photos: [
+      ["carlos-paz-1", "Villa Carlos Paz desde el cerro de la Cruz"],
+      ["interior-cocina", "Cocina integrada con ventana"],
+    ],
     title: "Departamento con balcón en Villa Carlos Paz",
     type: "DEPARTAMENTO",
     localityId: "loc-carlos-paz",
@@ -628,6 +706,10 @@ const others: P[] = [
   },
   {
     slug: "lote-en-unquillo-con-arroyo",
+    photos: [
+      ["cordoba-2", "Arroyo entre rocas y monte nativo"],
+      ["zona-sierras-chicas", "Paisaje de las Sierras Chicas"],
+    ],
     title: "Lote en Unquillo con arroyo",
     type: "LOTE",
     localityId: "loc-unquillo",
@@ -643,6 +725,10 @@ const others: P[] = [
   },
   {
     slug: "casa-serrana-en-rio-ceballos",
+    photos: [
+      ["rio-ceballos-1", "Dique La Quebrada, en Río Ceballos"],
+      ["interior-living", "Living de madera con vista al verde"],
+    ],
     title: "Casa serrana en Río Ceballos",
     type: "CASA",
     localityId: "loc-rio-ceballos",
@@ -663,6 +749,10 @@ const others: P[] = [
   },
   {
     slug: "lote-en-salsipuedes-barrio-abierto",
+    photos: [
+      ["zona-sierras-chicas", "Camino serrano en las Sierras Chicas"],
+      ["salsipuedes-1", "Calle del centro de Salsipuedes"],
+    ],
     title: "Lote en Salsipuedes, barrio abierto",
     type: "LOTE",
     localityId: "loc-salsipuedes",
@@ -676,6 +766,10 @@ const others: P[] = [
   },
   {
     slug: "departamento-en-nueva-cordoba",
+    photos: [
+      ["cordoba-1", "Edificios en barrio Nueva Córdoba"],
+      ["interior-cocina", "Cocina con mesada de madera"],
+    ],
     title: "Departamento en Nueva Córdoba",
     type: "DEPARTAMENTO",
     localityId: "loc-cordoba",
@@ -694,6 +788,10 @@ const others: P[] = [
   },
   {
     slug: "local-comercial-en-el-centro-de-cordoba",
+    photos: [
+      ["zona-capital", "La Cañada, en el centro de Córdoba"],
+      ["cordoba-1", "Edificios de Nueva Córdoba"],
+    ],
     title: "Local comercial en el centro de Córdoba",
     type: "LOCAL",
     localityId: "loc-cordoba",

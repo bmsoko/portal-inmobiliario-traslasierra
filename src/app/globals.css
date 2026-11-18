@@ -1,24 +1,81 @@
 @import "tailwindcss";
 
-/* Design tokens. TODO(client): brand — swap palette/logo here only. */
+/* Design tokens. TODO(client): brand — swap palette/logo/fonts here only. */
 :root {
-  --color-bg: #faf8f4; /* warm white */
+  --color-bg: #f7f6f2; /* mist white */
   --color-surface: #ffffff;
-  --color-stone: #e7e3da;
-  --color-ink: #1f2a24;
-  --color-muted: #5f6b63;
-  --color-accent: #1f5a46; /* deep green */
+  --color-stone: #d8d6ce;
+  --color-ink: #15201c; /* granite */
+  --color-muted: #55615b;
+  --color-accent: #0e4b45; /* deep teal */
   --color-accent-fg: #ffffff;
-  --radius: 14px;
+  --color-river: #dce8e4;
+  --radius: 20px;
 }
 
 @theme inline {
   --color-background: var(--color-bg);
   --color-foreground: var(--color-ink);
-  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-sans: var(--font-body), system-ui, sans-serif;
+  --font-display: var(--font-display), system-ui, sans-serif;
 }
 
 body {
   background: var(--color-bg);
   color: var(--color-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* One orchestrated moment: the hero headline settles in on load. */
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.hero-settle {
+  animation: settle 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-settle {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+.leaflet-container {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+.price-pill {
+  background: var(--color-accent);
+  color: #fff;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-weight: 600;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+  border: 2px solid #fff;
+  width: max-content;
 }
