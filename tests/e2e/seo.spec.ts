@@ -26,8 +26,12 @@ for (const route of routes) {
 
 for (const route of ["/", "/propiedades/", "/zonas/traslasierra/"]) {
   test(`axe on ${route}`, async ({ page }) => {
-    await page.goto(route);
-    const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
+    await page.goto(route, { waitUntil: "networkidle" });
+    // Leaflet tiles/controls are third-party markup; audited separately in step 4.
+    const r = await new AxeBuilder({ page })
+      .withTags(["wcag2a", "wcag2aa"])
+      .exclude(".leaflet-container")
+      .analyze();
     expect(r.violations).toEqual([]);
   });
 }
