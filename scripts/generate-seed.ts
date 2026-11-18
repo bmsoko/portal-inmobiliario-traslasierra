@@ -17,7 +17,7 @@ const palettes: Record<string, [string, string, string]> = {
 };
 function svg(label: string, pal: keyof typeof palettes, w = 1600, h = 1000): string {
   const [a, b, c] = palettes[pal];
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><rect width="${w}" height="${h}" fill="url(#g)"/><path d="M0 ${h * 0.62} L${w * 0.22} ${h * 0.38} L${w * 0.4} ${h * 0.55} L${w * 0.64} ${h * 0.3} L${w} ${h * 0.6} V${h} H0Z" fill="${b}"/><path d="M0 ${h * 0.78} Q${w * 0.3} ${h * 0.62} ${w * 0.6} ${h * 0.8} T${w} ${h * 0.74} V${h} H0Z" fill="${c}"/><text x="${w / 2}" y="${h * 0.14}" text-anchor="middle" font-family="sans-serif" font-size="${h * 0.045}" fill="${c}" opacity=".8">${label} · imagen de demostración</text></svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}" width="${w}" height="${h}"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><rect width="${w}" height="${h}" fill="url(#g)"/><path d="M0 ${h * 0.62} L${w * 0.22} ${h * 0.38} L${w * 0.4} ${h * 0.55} L${w * 0.64} ${h * 0.3} L${w} ${h * 0.6} V${h} H0Z" fill="${b}"/><path d="M0 ${h * 0.78} Q${w * 0.3} ${h * 0.62} ${w * 0.6} ${h * 0.8} T${w} ${h * 0.74} V${h} H0Z" fill="${c}"/></svg>`;
 }
 function img(name: string, label: string, pal: keyof typeof palettes, w?: number, h?: number) {
   writeFileSync(join(imgDir, `${name}.svg`), svg(label, pal, w, h));
